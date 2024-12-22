@@ -20,7 +20,7 @@ async function getUserRequestData(userIP: string): Promise<UserRequestData | nul
 		const data = await kv.get<UserRequestData>(userIP);
 		return data;
 	} catch (error) {
-		console.error('Error retrieving user request data:', error);
+		console.error('Error retrieving user request data :', error);
 		throw error;
 	}
 }
